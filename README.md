@@ -59,7 +59,7 @@ Notes on the packs:
 - `Subject_X_<split>_neus2.tar.gz` &rarr; top-level `recon_neus2/`, with per-frame `<frame>/model.ply` flattened to `<frame>.ply`.
 
 ### Metadata (`Subject_X_metadata.zip`)
-The per-subject metadata bundle (&le; 50 MB) ships **DDC** and **SMPL-X** characters side by side, plus the shared camera calibration:
+The per-subject metadata bundle (&le; 50 MB) ships **DDC** and **SMPL-X** characters side by side, plus the shared camera calibration. Details on loading and posing the DDC character can be found in <a href="https://github.com/kv2000/DeepCharacters_Pytorch"><strong>DeepCharacters Pytorch</strong></a>.
 
 ```
 Subject_X_metadata
@@ -86,8 +86,6 @@ Subject_X_metadata
     |--- smplx_train_merged.npz             # SMPL-X training poses
     |--- smplx_test_merged.npz              # SMPL-X testing poses
 ```
-
-Details on loading and posing the DDC character can be found in <a href="https://github.com/kv2000/DeepCharacters_Pytorch"><strong>DeepCharacters Pytorch</strong></a>.
 
 ### Download with scripts
 A helper script `dataset_downloader.py` is provided on the dataset page. It logs in, lists all packs, and downloads only the subjects / modalities you select, with resume and partial-file cleanup.
