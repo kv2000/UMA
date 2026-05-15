@@ -87,6 +87,8 @@ Subject_X_metadata
     |--- smplx_test_merged.npz              # SMPL-X testing poses
 ```
 
+Details on loading and posing the DDC character can be found in <a href="https://github.com/kv2000/DeepCharacters_Pytorch"><strong>DeepCharacters Pytorch</strong></a>.
+
 ### Download with scripts
 A helper script `dataset_downloader.py` is provided on the dataset page. It logs in, lists all packs, and downloads only the subjects / modalities you select, with resume and partial-file cleanup.
 
